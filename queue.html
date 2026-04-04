@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexto - Choisir un service</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">NEXTO</div>
+        <nav><a href="Landing.html">Accueil</a><a href="#">Contact</a></nav>
+    </header>
+
+<main class="main-wrapper">
+    <section class="booking-card wide-card">
+        <h1 class="title">File d'<span>attente</span></h1>
+        <p class="subtitle">Suivez l'état d'avancement des tickets en temps réel</p>
+
+        <div class="stats-grid">
+            <div class="stat-box">
+                <span class="label">TICKET ACTUEL</span>
+                <span class="val accent-text">B12</span>
+            </div>
+            <div class="stat-box">
+                <span class="label">TEMPS ESTIMÉ</span>
+                <span class="val">~ 15 min</span>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table class="queue-table">
+                <thead>
+                    <tr>
+                        <th>Numéro</th>
+                        <th>Service</th>
+                        <th>Statut</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="current">
+                        <td><strong>B12</strong></td>
+                        <td>Permis de conduire</td>
+                        <td><span class="badge badge-success">En cours</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>B13</strong></td>
+                        <td>Carte d'identité</td>
+                        <td><span class="badge badge-warning">En attente</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>B14</strong></td>
+                        <td>Certificat résidence</td>
+                        <td><span class="badge badge-warning">En attente</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <a href="Landing.html" class="btn-outline"><i class="fas fa-sync-alt"></i> Actualiser</a>
+    </section>
+</main>
+</body>
+</html>
