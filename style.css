@@ -1,0 +1,343 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #ffffff;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+.contact-btn {
+  background: #0b2a4a;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+   text-decoration: none;
+   transition: 0,03s;
+}
+.contact-btn:hover{
+    background-color: #e9eef5;
+    color: #000000;
+}
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 40px;
+  background: linear-gradient(120deg, #0b2a4a, #1d4f91);
+  color: white;
+}
+.hero-left {
+  max-width: 50%;
+}
+.hero-left h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.hero-left p {
+  font-size: 14px;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+.primary {
+  background: #f4b400;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+   text-decoration: none;
+   transition: 0,03s;
+}
+.primary:hover{
+    background-color: #e9eef5;
+}
+.secondary {
+  background: white;
+  color: #0b2a4a;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+   text-decoration: none;
+}
+.secondary:hover{
+    background: #f4b400;
+
+}
+
+/* RIGHT IMAGE */
+.hero-right img {
+  width: 400px;
+  max-width: 100%;
+}
+/* SECTION */
+.features {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.features h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #1e2a38;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+.card {
+  background: #ffffff;
+  padding: 25px 20px;
+  border-radius: 12px;
+  width: 230px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* ICON */
+.icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 15px;
+  background: #e9eef5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon i {
+  font-size: 24px;
+  color: #2c4a73;
+}
+
+
+.how-it-works {
+    text-align: center;
+    padding: 50px 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.section-title {
+    color: #1a2b56;
+    font-size: 2.2rem;
+    margin-bottom: 60px;
+    font-weight: 700;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.step {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-wrapper {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    margin-bottom: 25px;
+    position: relative;
+    font-size: 2rem;
+    color: #1a2b56; /* Dark blue color from image */
+}
+
+/* Icon specific colors */
+.icon-wrapper .fa-check {
+    background-color: #1a2b56;
+    color: #ffc107; /* Gold checkmark icon */
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+}
+
+/* S-ham li binat-hom */
+.arrow {
+    padding-top: 40px;
+    color: #1a2b56;
+    font-size: 1.5rem;
+}
+
+/* Text style */
+.step h3 {
+    font-size: 1.1rem;
+    color: #1a2b56;
+    margin-bottom: 15px;              
+    font-weight: 700;
+}
+
+.advantages-section {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.title-main {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+/* Flexbox container for top part */
+.top-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 60px;
+}
+
+.image-container {
+    flex: 1;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.benefits-list {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.benefit-icon {
+    font-size: 1.8rem;
+    min-width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefit-text h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+/* Bottom CTA section */
+.cta-section {
+    text-align: center;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.cta-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.cta-button {
+    background-color: #fcc43c; /* Yellow/Gold button */
+    color: #0d1b3e;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin: 20px;
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+    background-color: #ffca4a;
+}
+.footer {
+    background-color: #F5F5F5;
+    padding: 60px;
+    color: #000;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.footer-container h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.footer-container h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.footer-container ul li {
+    margin-bottom: 8px;
+    list-style: none;
+}
+.footer-container p {
+    margin-top: 30px;
+}
