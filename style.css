@@ -286,33 +286,39 @@ nav ul li a {
     margin-bottom: 5px;
 }
 
-/* Bottom CTA section */
 .cta-section {
     text-align: center;
-    padding-top: 40px;
-    border-top: 1px solid rgba(255,255,255,0.1);
+    padding: 50px 20px;
+    font-family: Arial, sans-serif; /* Using a clean sans-serif font */
+    background-color: #f9f9f9;    /* Light background as seen in image */
 }
 
 .cta-section h2 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.cta  {
-    background-color: #fcc43c; 
-    color: #0d1b3e;
+.cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.cta {
+    display: inline-block;
+    background-color: #f5cc64;    
+    color: #1d3557;               
     padding: 15px 40px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.2s;
-    margin: 120px;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3rem;
+    border-radius: 12px;          
+    transition: 0.3s ease;
 }
 
 .cta:hover {
-    background-color: #c5c3bd;
+    background-color: #dfb54e;    
 }
 .footer {
     background-color: #F5F5F5;
@@ -395,23 +401,42 @@ body {
 .subtitle { color: #64748b; 
     font-size: 0.95rem; 
     margin-bottom: 35px; }
-.services-list { display: flex;
-     flex-direction: column; 
-     gap: 12px;
-      margin-bottom: 30px; }
-.service-item {
-
-    padding: 16px;
-    border: 2px solid #f1f5f9;
-    border-radius: 14px;
-    background: #f8fafc;
-    color: var(--primary);
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.2s;
+.services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* المسافة بين الحبات */
+    max-width: 500px;
+    margin: 20px auto;
 }
-.service-item:hover { border-color: var(--primary); background: #fff; }
 
+.custom-button {
+    display: block;
+    padding: 15px 20px;
+    background-color: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px; /* الزوايا مدورة بحال التصويرة */
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover: فاش كيدوز لاري فوقها */
+.custom-button:hover {
+    border-color: #e9c46a;
+    background-color: #fffcf5;
+}
+
+/* فاش كيتختار الـ Radio (Checked) */
+input[type="radio"]:checked + .custom-button {
+    background-color: #e9c46a; /* اللون الذهبي لي فالتصويرة */
+    border-color: #e9c46a;
+    color: #1d3557; /* لون النص غامق */
+    box-shadow: 0 4px 12px rgba(233, 196, 106, 0.2);
+    font-weight: bold;
+}
 .btn-primary {
     width: 100%;
     padding: 16px;
