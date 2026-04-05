@@ -460,7 +460,7 @@ input[type="radio"]:checked + .custom-button {
 
 .ticket-head { background: rgba(255,255,255,0.05); 
     padding: 30px; }
-.ticket-id { font-size: 4rem; 
+.ticket-id { font-size: 8rem; 
     font-weight: 900; 
     color: var(--accent); }
 
@@ -628,7 +628,7 @@ input[type="radio"]:checked + .custom-button {
     border-bottom: 1px solid #f1f5f9;
 }
 
-.ticket-id { font-weight: 800; font-size: 1.2rem; }
+.ticket-id { font-weight: 900; font-size: 4rem; }
 .ticket-row.done { color: #94a3b8; opacity: 0.7; }
 
 /* Responsive */
